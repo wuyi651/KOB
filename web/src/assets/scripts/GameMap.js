@@ -1,6 +1,6 @@
 import { AcGameObject } from "./AcGameObject";
-import { Snake } from "./Snake";
-import { Walls } from "./Walls";
+import { Wall } from "./Wall";
+import { Snake } from './Snake';
 
 export class GameMap extends AcGameObject {
     constructor(ctx, parent) {
@@ -75,7 +75,7 @@ export class GameMap extends AcGameObject {
         for (let r = 0; r < this.rows; r ++ ) {
             for (let c = 0; c < this.cols; c ++ ) {
                 if (g[r][c]) {
-                    this.walls.push(new Walls(r, c, this));
+                    this.walls.push(new Wall(r, c, this));
                 }
             }
         }

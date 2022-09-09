@@ -1,6 +1,6 @@
 <template>
     <ContentField>
-        RankList
+        排行榜
     </ContentField>
 </template>
 
@@ -8,12 +8,11 @@
 import ContentField from '../../components/ContentField.vue'
 
 export default {
-    components:{
+    components: {
         ContentField
     }
 }
 </script>
 
 <style scoped>
-    
 </style>

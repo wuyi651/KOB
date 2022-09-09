@@ -1,6 +1,6 @@
 <template>
     <ContentField>
-        My Bot
+        我的Bot
     </ContentField>
 </template>
 
@@ -8,12 +8,11 @@
 import ContentField from '../../../components/ContentField.vue'
 
 export default {
-    components:{
+    components: {
         ContentField
     }
 }
 </script>
 
 <style scoped>
-    
 </style>

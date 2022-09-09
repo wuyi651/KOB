@@ -1,11 +1,5 @@
 package com.kob.backend.config;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
-
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
@@ -47,4 +41,3 @@ public class CorsConfig implements Filter {
     public void destroy() {
     }
 }
-

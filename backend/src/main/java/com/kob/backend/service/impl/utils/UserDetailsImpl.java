@@ -9,11 +9,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
