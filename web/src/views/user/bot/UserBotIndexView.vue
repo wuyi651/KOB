@@ -46,7 +46,7 @@
                                 <div class="modal-footer">
                                     <div class="error-message">{{ botadd.error_message }}</div>
                                     <button type="button" class="btn btn-primary" @click="add_bot">Create</button>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancell</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                 </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                                 <div class="modal-footer">
                                                     <div class="error-message">{{ bot.error_message }}</div>
                                                     <button type="button" class="btn btn-primary" @click="update_bot(bot)">Save changes</button>
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancell</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                                 </div>
                                                 </div>
                                             </div>
