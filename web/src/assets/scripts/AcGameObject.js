@@ -7,14 +7,14 @@ export class AcGameObject {
         this.has_called_start = false;
     }
 
-    start() {  // 只执行一次
+    start() {  // Execute only once
     }
 
-    update() {  // 每一帧执行一次，除了第一帧之外
+    update() {  // Executed once per frame, except for the first frame
 
     }
 
-    on_destroy() {  // 删除之前执行
+    on_destroy() {  // Execute before deleting
 
     }
 
@@ -31,7 +31,7 @@ export class AcGameObject {
     }
 }
 
-let last_timestamp;  // 上一次执行的时刻
+let last_timestamp;  // The moment of the last execution
 const step = timestamp => {
     for (let obj of AC_GAME_OBJECTS) {
         if (!obj.has_called_start) {

@@ -66,7 +66,7 @@ export default {
                     })
                 },
                 error() {
-                    error_message.value = "用户名或密码错误";
+                    error_message.value = "Incorrect username or password";
                 }
             })
         }

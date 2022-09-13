@@ -66,7 +66,7 @@ export class GameMap extends AcGameObject {
         this.ctx.canvas.height = this.L * this.rows;
     }
 
-    check_ready() {  // 判断两条蛇是否都准备好下一回合了
+    check_ready() {  // Determine if both snakes are ready for the next round
         for (const snake of this.snakes) {
             if (snake.status !== "idle") return false;
             if (snake.direction === -1) return false;
@@ -74,13 +74,13 @@ export class GameMap extends AcGameObject {
         return true;
     }
 
-    next_step() {  // 让两条蛇进入下一回合
+    next_step() {  // Let the two snakes go to the next round
         for (const snake of this.snakes) {
             snake.next_step();
         }
     }
 
-    check_valid(cell) {  // 检测目标位置是否合法：没有撞到两条蛇的身体和障碍物
+    check_valid(cell) {  // Detect if the target position is legal: no hitting the bodies of two snakes and obstacles
         for (const wall of this.walls) {
             if (wall.r === cell.r && wall.c === cell.c)
                 return false;
@@ -88,7 +88,7 @@ export class GameMap extends AcGameObject {
 
         for (const snake of this.snakes) {
             let k = snake.cells.length;
-            if (!snake.check_tail_increasing()) {  // 当蛇尾会前进的时候，蛇尾不要判断
+            if (!snake.check_tail_increasing()) {  // When the tail of the snake will advance, the tail of the snake do not judge
                 k -- ;
             }
             for (let i = 0; i < k; i ++ ) {
