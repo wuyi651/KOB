@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
 @RestController
 public class AddController {
     @Autowired

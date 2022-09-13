@@ -13,11 +13,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
 @Service
 public class GetListServiceImpl implements GetListService {
     @Autowired

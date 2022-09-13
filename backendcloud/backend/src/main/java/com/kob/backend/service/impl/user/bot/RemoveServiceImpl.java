@@ -13,14 +13,8 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
 @Service
 public class RemoveServiceImpl implements RemoveService {
-
     @Autowired
     private BotMapper botMapper;
 
@@ -36,18 +30,18 @@ public class RemoveServiceImpl implements RemoveService {
         Map<String, String> map = new HashMap<>();
 
         if (bot == null) {
-            map.put("error_message", "Bot does not exist or has been deleted");
+            map.put("error_message", "Bot不存在或已被删除");
             return map;
         }
 
         if (!bot.getUserId().equals(user.getId())) {
-            map.put("error_message", "No permission to delete bot");
+            map.put("error_message", "没有权限删除该Bot");
             return map;
         }
 
         botMapper.deleteById(bot_id);
-        map.put("error_message", "success");
 
+        map.put("error_message", "success");
         return map;
     }
 }

@@ -9,15 +9,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
-
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Record {
     @TableId(type = IdType.AUTO)
     private Integer id;
@@ -31,6 +25,6 @@ public class Record {
     private String bSteps;
     private String map;
     private String loser;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Los Angeles")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Shanghai")
     private Date createtime;
 }

@@ -9,12 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,11 +19,8 @@ public class Bot {
     private String title;
     private String description;
     private String content;
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Los Angeles")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Shanghai")
     private Date createtime;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Los Angeles")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Shanghai")
     private Date modifytime;
 }
-
-

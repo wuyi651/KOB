@@ -8,16 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-/**
- * @author Wei
- * @version 1.0
- * @Description TODO
- */
 @RestController
 public class UpdateController {
-
     @Autowired
     private UpdateService updateService;
+
     @PostMapping("/user/bot/update/")
     public Map<String, String> update(@RequestParam Map<String, String> data) {
         return updateService.update(data);
