@@ -3,7 +3,7 @@ package com.kob.botrunningsystem.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bot implements BotInterface {
+public class Bot implements com.kob.botrunningsystem.utils.BotInterface {
     static class Cell {
         public int x, y;
         public Cell(int x, int y) {
